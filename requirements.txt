@@ -5,4 +5,7 @@ matplotlib
 scikit-learn
 Flask
 dill
+catboost
+xgboost
+imbalanced-learn
 -e .
