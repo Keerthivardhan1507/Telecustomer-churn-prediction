@@ -1,6 +1,6 @@
-Customer Churn Prediction Project
+## Customer Churn Prediction Project
 
-Project Overview
+**Project Overview**
 
 This project focuses on predicting customer churn using machine learning techniques. The aim is to identify customers who are likely to discontinue a service, helping businesses take proactive retention actions.
 
@@ -57,37 +57,37 @@ flowchart TD
 ## Workflow Explanation
 1. Data Ingestion
 
-Loads the raw dataset
+- Loads the raw dataset
 
-Splits data into training and testing sets
+- Splits data into training and testing sets
 
-Saves processed files into the artifacts/ directory
+- Saves processed files into the artifacts/ directory
 
 2. Data Transformation
 
-Handles missing values
+- Handles missing values
 
-Encodes categorical features
+- Encodes categorical features
 
-Scales numerical features
+- Scales numerical features
 
-Saves preprocessing pipeline as preprocessor.pkl
+- Saves preprocessing pipeline as preprocessor.pkl
 
 3. Model Training
 
-Trains a machine learning model
+- Trains a machine learning model
 
-Evaluates model performance
+- Evaluates model performance
 
-Saves trained model as model.pkl
+- Saves trained model as model.pkl
 
 4. Prediction Pipeline
 
-Loads saved model and preprocessor
+- Loads saved model and preprocessor
 
-Generates churn predictions for new inputs
+- Generates churn predictions for new inputs
 
-Integrated with Flask application
+- Integrated with Flask application
 
 ## Installation & Setup
 1. Clone the repository
@@ -127,7 +127,7 @@ Then open:
 
 http://127.0.0.1:5000/
 
-Technologies Used
+## Technologies Used
 
 - Python 3.8
 
