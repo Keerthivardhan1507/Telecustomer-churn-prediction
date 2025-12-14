@@ -1,11 +1,13 @@
 Customer Churn Prediction Project
+
 Project Overview
 
 This project focuses on predicting customer churn using machine learning techniques. The aim is to identify customers who are likely to discontinue a service, helping businesses take proactive retention actions.
 
 The project follows a modular, pipeline-based architecture and includes a Flask web application for prediction.
 
-Project Structure
+## Project Structure
+```
 project/
 │
 ├── artifacts/                     # Intermediate files & trained models
@@ -39,8 +41,9 @@ project/
 ├── requirements.txt               # Project dependencies
 ├── setup.py                       # Package setup
 └── README.md
-
-Flow Chart (Project Pipeline)
+```
+## Flow Chart (Project Pipeline)
+```
 flowchart TD
     A[Start] --> B[Data Ingestion]
     B --> C[Data Transformation]
@@ -49,8 +52,9 @@ flowchart TD
     E --> F[Save Model & Artifacts]
     F --> G[Prediction Pipeline]
     G --> H[Churn Prediction Output]
+```
 
-Workflow Explanation
+## Workflow Explanation
 1. Data Ingestion
 
 Loads the raw dataset
@@ -85,26 +89,38 @@ Generates churn predictions for new inputs
 
 Integrated with Flask application
 
-Installation & Setup
+## Installation & Setup
 1. Clone the repository
+```bash
 git clone https://github.com/Keerthivardhan1507/mlproject.git
 cd mlproject
+```
 
 2. Create & activate Conda environment
+```bash
 conda create -n myenv python=3.8 -y
 conda activate myenv
+```
 
 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+## 🚀Usage
 
-Train the Model
+1. **Train the Model**
+```bash
 python src/pipeline/train_pipeline.py
-
-Run Predictions (Pipeline)
+```
+2. **Run Predictions (Pipeline)**
+```bash
 python src/pipeline/predict_pipeline.py
+```
 
-Run Flask Application
+3. **Run Flask Application**
+```bash
 python app.py
+```
 
 
 Then open:
@@ -113,24 +129,24 @@ http://127.0.0.1:5000/
 
 Technologies Used
 
-Python 3.8
+- Python 3.8
 
-Pandas, NumPy
+- Pandas, NumPy
 
-Scikit-learn
+- Scikit-learn
 
-CatBoost
+- CatBoost
 
-Flask
+- Flask
 
-Modular ML Pipeline Architecture
+- Modular ML Pipeline Architecture
 
-Future Enhancements
+## Future Enhancements
 
-Docker deployment
+- Docker deployment
 
-CI/CD integration
+- CI/CD integration
 
-Model monitoring & drift detection
+- Model monitoring & drift detection
 
-Cloud deployment (AWS / Azure)
+- Cloud deployment (AWS / Azure)
