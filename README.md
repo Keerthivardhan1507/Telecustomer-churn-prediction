@@ -55,7 +55,7 @@ flowchart TD
 ```
 
 ## Workflow Explanation
-1. Data Ingestion
+1. **Data Ingestion**
 
 - Loads the raw dataset
 
@@ -63,7 +63,7 @@ flowchart TD
 
 - Saves processed files into the artifacts/ directory
 
-2. Data Transformation
+2. **Data Transformation**
 
 - Handles missing values
 
@@ -73,7 +73,7 @@ flowchart TD
 
 - Saves preprocessing pipeline as preprocessor.pkl
 
-3. Model Training
+3. **Model Training**
 
 - Trains a machine learning model
 
@@ -81,7 +81,7 @@ flowchart TD
 
 - Saves trained model as model.pkl
 
-4. Prediction Pipeline
+4. **Prediction Pipeline**
 
 - Loads saved model and preprocessor
 
